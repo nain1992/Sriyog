@@ -6,20 +6,21 @@ import { getPercent } from "../../middleware";
 export const standardButtonStyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
-      height: getPercent(5, width),
-      backgroundColor: "#9CE3AE",
-      borderRadius: 8,
+      container: {
+      height: getPercent(8, height),
+      width: getPercent(90, width),
+      backgroundColor: "#FD4E4E",
+      borderRadius: 100,
       shadowColor: "#000",
       shadowOffset: {
         width: 5,
         height: 6,
       },
-      shadowOpacity: 2,
-      shadowRadius: 1,
-      elevation: 6,
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
       alignItems: "center",
       justifyContent: "center",
-      marginRight: getPercent(3, width),
+    },
     },
     text: {
       fontSize: rf(15),
