@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "Together",
-    "slug": "together",
+    "name": "Sriyog",
+    "slug": "sriyog",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Splashh.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

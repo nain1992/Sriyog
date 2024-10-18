@@ -3,6 +3,7 @@ import {
   TouchableOpacity,
   View,
   useWindowDimensions,
+  Image,
 } from "react-native";
 import { connect } from "react-redux";
 import { Headerstyles } from "../styles/Global/main";
@@ -16,13 +17,33 @@ const Header = (props) => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.titlewrapper}>
-        <Ionicons name="chevron-back" size={rf(16)} color="#fff" />
+      <View style={styles.logobody}>
+        <Image
+          source={require("../assets/logoo.png")}
+          style={{ height: "100%", width: "100%" }}
+          resizeMode="contain"
+        />
+      </View>
+      <View style={styles.siriyogbody}>
+        <Image
+          source={require("../assets/SRIYOG.png")}
+          style={{ height: "100%", width: "100%" }}
+          resizeMode="contain"
+        />
+      </View>
+      <View style={styles.titlebody}>
         <Text style={styles.titletext}>{title}</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Entypo name="dots-three-vertical" size={rf(18)} color="#fff" />
-      </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => props?.navigation?.navigate("Contact")}
+          style={styles.locationbody}
+        >
+          <Image
+            source={require("../assets/9.png")}
+            style={{ height: "100%", width: "100%" }}
+            resizeMode="contain"
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

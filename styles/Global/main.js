@@ -2,15 +2,44 @@ import { Platform, StatusBar, StyleSheet } from "react-native";
 import { RFValue as rf } from "react-native-responsive-fontsize";
 import { getPercent } from "../../middleware";
 
-//standardButton Styles starts here
+//bottommenu Styles starts here
+export const Bottomtabmenustyles = ({ width, height }) =>
+  StyleSheet.create({
+    container: {
+      height: getPercent(10, height),
+      width: getPercent(100, width),
+      backgroundColor: "#D9D9D9",
+      flexDirection: "row",
+      alignItems: "center",
+      paddingHorizontal: getPercent(5, width),
+      justifyContent: "space-between",
+      position: "absolute",
+      bottom: 0,
+    },
+    iconwrapper: {
+      alignItems: "center",
+    },
+    iconbody: {
+      height: 20,
+      width: 20,
+      overflow: "hidden",
+    },
+    icontitlename: {
+      fontFamily: "Regular",
+      fontSize: rf(11),
+      color: "#4B4B4B",
+      marginTop: 5,
+    },
+  });
+
 export const standardButtonStyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
-      container: {
-      height: getPercent(8, height),
-      width: getPercent(90, width),
-      backgroundColor: "#FD4E4E",
-      borderRadius: 100,
+      height: getPercent(7, height),
+      width: getPercent(45, width),
+      backgroundColor: "#0C4690",
+      alignSelf: "center",
+      borderRadius: 10,
       shadowColor: "#000",
       shadowOffset: {
         width: 5,
@@ -21,11 +50,44 @@ export const standardButtonStyles = ({ width, height }) =>
       alignItems: "center",
       justifyContent: "center",
     },
-    },
+
     text: {
-      fontSize: rf(15),
+      fontSize: rf(18),
       fontFamily: "SemiBold",
-      color: "#000000",
+      color: "#fff",
+    },
+  });
+//next btn
+
+//standardButton Styles starts here
+export const Nextbtnstyles = ({ width, height }) =>
+  StyleSheet.create({
+    container: {
+      height: getPercent(7, height),
+      width: getPercent(40, width),
+      flexDirection: "row",
+      backgroundColor: "#0C4690",
+      alignSelf: "center",
+      borderRadius: 10,
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 5,
+        height: 6,
+      },
+      shadowOpacity: 0.3,
+      shadowRadius: 10,
+      alignItems: "center",
+      justifyContent: "space-around",
+    },
+
+    text: {
+      fontSize: rf(18),
+      fontFamily: "SemiBold",
+      color: "#fff",
+    },
+    iconbody: {
+      height: 20,
+      width: 20,
     },
   });
 
@@ -55,23 +117,70 @@ export const Headerstyles = ({ width, height }) =>
       alignItems: "center",
       justifyContent: "center",
       backgroundColor: "#fff",
-      backgroundColor: "#0F1322",
       flexDirection: "row",
       alignItems: "center",
       paddingHorizontal: getPercent(5, width),
       justifyContent: "space-between",
-      borderBottomWidth: 1,
-      borderColor: "#28374D",
+      paddingTop:
+        Platform.OS === "ios" ? getPercent(3, height) : getPercent(0, height),
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+
+      elevation: 5,
     },
-    titlewrapper: {
+    logobody: {
+      height: getPercent(5, height),
+      width: getPercent(5, height),
+      overflow: "hidden",
+    },
+    siriyogbody: {
+      height: getPercent(5, height),
+      width: getPercent(20, width),
+      overflow: "hidden",
+      marginLeft: 6,
+    },
+    titlebody: {
       flexDirection: "row",
       alignItems: "center",
+      flex: 1,
+      justifyContent: "space-between",
+      paddingLeft: 10,
     },
     titletext: {
-      fontFamily: "SemiBold",
-      fontSize: 18,
-      color: "rgba(255, 255, 255, 1)",
-      marginLeft: 10,
-      fontWeight: "600",
+      fontFamily: "Medium",
+      fontSize: rf(15),
+      color: "#4B4B4B",
+    },
+    locationbody: {
+      height: 20,
+      width: 20,
+      overflow: "hidden",
+    },
+  });
+
+//Field styles
+
+export const Fieldstyles = ({ width, height }) =>
+  StyleSheet.create({
+    container: {
+      width: getPercent(90, width),
+      height: getPercent(7, height),
+      borderBottomWidth: 1,
+      borderColor: "#4B4B4B",
+      alignSelf: "center",
+      justifyContent: "center",
+      paddingLeft: 5,
+      marginVertical: 3,
+    },
+    input: {
+      width: "100%",
+      fontFamily: "Regular",
+      fontSize: rf(12),
+      color: "#000000",
     },
   });
