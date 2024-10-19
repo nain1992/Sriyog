@@ -96,21 +96,21 @@ const Contact = (props) => {
             <TouchableOpacity style={styles.whatsappbody}>
               <Image
                 source={require("../../assets/29.png")}
-                style={{ height: "70%", width: "70%" }}
+                style={{ height: "80%", width: "80%" }}
                 resizeMode="contain"
               />
             </TouchableOpacity>
             <TouchableOpacity style={styles.whatsappbody}>
               <Image
                 source={require("../../assets/36.png")}
-                style={{ height: "70%", width: "70%" }}
+                style={{ height: "80%", width: "80%" }}
                 resizeMode="contain"
               />
             </TouchableOpacity>
             <TouchableOpacity style={styles.whatsappbody}>
               <Image
-                source={require("../../assets/16.png")}
-                style={{ height: "70%", width: "70%" }}
+                source={require("../../assets/7.png")}
+                style={{ height: "80%", width: "80%" }}
                 resizeMode="contain"
               />
             </TouchableOpacity>

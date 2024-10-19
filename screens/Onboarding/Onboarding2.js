@@ -36,9 +36,10 @@ const Onboarding2 = (props) => {
           temporary and part-time positions filled by independent contractors
           and freelancers rather than full-time permanent employees.
         </Text>
-        <Text style={styles.nametext}>
-          Civil Contractor{"\n"}Keshab Prasad Gautam
-        </Text>
+        <View>
+          <Text style={styles.nametext}>Civil Contractor</Text>
+          <Text style={styles.name}>Keshab Prasad Gautam</Text>
+        </View>
       </View>
 
       <View style={styles.btnwrapper}>

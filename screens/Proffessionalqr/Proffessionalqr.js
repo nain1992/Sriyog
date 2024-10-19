@@ -54,9 +54,9 @@ const Proffessionalqr = (props) => {
           </View>
           <View style={styles.userinfowrapper}>
             <Text style={styles.nametext}>Shivram Kamat</Text>
-            <Text style={styles.nametext}>987654321</Text>
-            <Text style={styles.nametext}>Septic Tank Cleaner</Text>
-            <Text style={styles.nametext}>Biratnagar</Text>
+            <Text style={styles.numtext}>987654321</Text>
+            <Text style={styles.protext}>Septic Tank Cleaner</Text>
+            <Text style={styles.locatext}>Biratnagar</Text>
           </View>
           <View
             style={[

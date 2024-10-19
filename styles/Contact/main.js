@@ -10,9 +10,12 @@ export const styles = ({ width, height }) =>
       backgroundColor: "#fff",
     },
     mapview: {
-      height: 200,
-      width: "100%",
-      marginBottom: 10,
+      height: getPercent(22, height),
+      width: "90%",
+      marginVertical: 10,
+      alignSelf: "center",
+      borderRadius: 10,
+      overflow: "hidden",
     },
 
     contacttext: {
@@ -57,7 +60,7 @@ export const styles = ({ width, height }) =>
       height: getPercent(10, height),
     },
     dropzonebtn: {
-      height: getPercent(5, height),
+      height: getPercent(4.5, height),
       width: getPercent(40, width),
       borderRadius: 5,
       borderWidth: 1,

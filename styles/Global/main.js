@@ -8,7 +8,7 @@ export const Bottomtabmenustyles = ({ width, height }) =>
     container: {
       height: getPercent(10, height),
       width: getPercent(100, width),
-      backgroundColor: "#D9D9D9",
+      backgroundColor: "#EEEEEE",
       flexDirection: "row",
       alignItems: "center",
       paddingHorizontal: getPercent(5, width),
@@ -23,6 +23,8 @@ export const Bottomtabmenustyles = ({ width, height }) =>
       height: 20,
       width: 20,
       overflow: "hidden",
+      justifyContent: "center",
+      alignItems: "center",
     },
     icontitlename: {
       fontFamily: "Regular",
@@ -140,9 +142,9 @@ export const Headerstyles = ({ width, height }) =>
     },
     siriyogbody: {
       height: getPercent(5, height),
-      width: getPercent(20, width),
+      width: getPercent(22, width),
       overflow: "hidden",
-      marginLeft: 6,
+      marginLeft: 12,
     },
     titlebody: {
       flexDirection: "row",
@@ -152,8 +154,8 @@ export const Headerstyles = ({ width, height }) =>
       paddingLeft: 10,
     },
     titletext: {
-      fontFamily: "Medium",
-      fontSize: rf(15),
+      fontFamily: "Bold",
+      fontSize: rf(13),
       color: "#4B4B4B",
     },
     locationbody: {
@@ -169,18 +171,29 @@ export const Fieldstyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
       width: getPercent(90, width),
-      height: getPercent(7, height),
+      height: getPercent(6, height),
       borderBottomWidth: 1,
       borderColor: "#4B4B4B",
       alignSelf: "center",
       justifyContent: "center",
       paddingLeft: 5,
       marginVertical: 3,
+      flexDirection: "row",
+      alignItems: "center",
+      paddingRight: 15,
+      justifyContent: "space-between",
     },
     input: {
-      width: "100%",
+      width: "80%",
       fontFamily: "Regular",
-      fontSize: rf(12),
+      fontSize: rf(13),
       color: "#000000",
+    },
+    iconbody: {
+      height: 20,
+      width: 20,
+      overflow: "hidden",
+      justifyContent: "center",
+      alignItems: "center",
     },
   });

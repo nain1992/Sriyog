@@ -36,7 +36,10 @@ const Onboarding = (props) => {
           processes and projects—such as skilling employees to use new software
           platforms designed to help launch products faster.
         </Text>
-        <Text style={styles.nametext}>Honorable{"\n"}Bhim Parajuli</Text>
+        <View>
+          <Text style={styles.nametext}>Honorable</Text>
+          <Text style={styles.name}>Bhim Parajuli</Text>
+        </View>
       </View>
 
       <View style={styles.btnwrapper}>

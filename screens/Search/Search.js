@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { connect } from "react-redux";
-import { styles as _styles } from "../../styles/Proffessionscreen/main";
+import { styles as _styles } from "../../styles/Search/main";
 import Header from "../../globalComponents/Header";
 import { useState } from "react";
 import Bottomtabmenu from "../../globalComponents/Bottomtabmenu";
@@ -154,8 +154,9 @@ const Search = (props) => {
                     style={[
                       styles.imagebody,
                       {
-                        height: getPercent(8, height),
-                        width: getPercent(8, height),
+                        height: getPercent(9.5, height),
+                        width: getPercent(9.5, height),
+                        borderRadius: 100,
                       },
                     ]}
                   >

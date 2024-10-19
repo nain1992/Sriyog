@@ -35,10 +35,10 @@ const Onboarding3 = (props) => {
           SRIYOG. I have been working as caterer for 40 years in Biratnagar and
           I’m happy that I get leads from this APP.
         </Text>
-        <Text style={styles.nametext}>
-          Caterer{"\n"}
-          Ramu Kamat
-        </Text>
+        <View>
+          <Text style={styles.nametext}>Caterer</Text>
+          <Text style={styles.name}>Ramu Kamat</Text>
+        </View>
       </View>
 
       <View style={styles.btnwrapper}>

@@ -10,11 +10,11 @@ export const styles = ({ width, height }) =>
       backgroundColor: "#fff",
     },
     bannerbody: {
-      height: getPercent(25, height),
+      height: getPercent(23, height),
       width: getPercent(90, width),
       borderRadius: 10,
       overflow: "hidden",
-      marginVertical: getPercent(2, height),
+      marginVertical: getPercent(1, height),
       alignSelf: "center",
       shadowColor: "#000",
       shadowOffset: {
@@ -32,14 +32,14 @@ export const styles = ({ width, height }) =>
       color: "#4B4B4B",
       paddingLeft: getPercent(5, width),
       fontStyle: "italic",
-      marginBottom: 5,
+      marginBottom: 4,
     },
     profession: {
       fontFamily: "Medium",
       fontSize: rf(18),
       color: "#4B4B4B",
       paddingLeft: getPercent(5, width),
-      marginBottom: 5,
+      marginBottom: 4,
     },
     topjobs: {
       fontFamily: "Medium",
@@ -47,7 +47,7 @@ export const styles = ({ width, height }) =>
       color: "#4B4B4B",
       paddingLeft: getPercent(5, width),
       fontStyle: "italic",
-      marginBottom: 5,
+      marginBottom: 4,
     },
     professionswrapper: {
       flexDirection: "row",

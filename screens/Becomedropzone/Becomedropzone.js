@@ -55,23 +55,58 @@ const Becomedropzone = (props) => {
             placeholder="Type of Entity"
             value={lookingfor}
             onChangeText={(val) => setLookingfor(val)}
+            dropdown
           />
-          <Field
+          {/* <Field
             placeholder="Phone"
             value={phone}
             onChangeText={(val) => setPhone(val)}
             keyboardType="decimal-pad"
-          />
+          /> */}
+          <View
+            style={[
+              styles.feildcontainer,
+              {
+                justifyContent: "center",
+              },
+            ]}
+          >
+            <TouchableOpacity style={styles.fieldiconbody}>
+              <Image
+                source={require("../../assets/50.png")}
+                style={{ height: "80%", width: "80%" }}
+                resizeMode="contain"
+              />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.fieldiconbody}>
+              <Image
+                source={require("../../assets/99.png")}
+                style={{ height: "80%", width: "80%" }}
+                resizeMode="contain"
+              />
+            </TouchableOpacity>
+            <TextInput
+              placeholder="Phone"
+              value={phone}
+              onChangeText={(val) => setPhone(val)}
+              style={styles.fieldinput}
+              placeholderTextColor={"rgba(75, 75, 75, 0.7)"}
+              keyboardType="decimal-pad"
+            />
+          </View>
+
           <Field
             placeholder="City"
             value={city}
             onChangeText={(val) => setCity(val)}
+            dropdown
           />
 
           <Field
             placeholder="Area"
             value={type}
             onChangeText={(val) => setType(val)}
+            dropdown
           />
           <Field
             placeholder="Nearest Landmark"

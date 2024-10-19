@@ -36,10 +36,10 @@ const Onboarding4 = (props) => {
           problems like unemployment through digital connectivity is SRIYOG,
           which has been operating in a start-up model.
         </Text>
-        <Text style={styles.nametext}>
-          Founder{"\n"}
-          PRACAS Upreti
-        </Text>
+        <View>
+          <Text style={styles.nametext}>Founder</Text>
+          <Text style={styles.name}>PRACAS Upreti</Text>
+        </View>
       </View>
 
       <View style={styles.btnwrapper}>

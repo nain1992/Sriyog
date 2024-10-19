@@ -12,12 +12,12 @@ export const styles = ({ width, height }) =>
     imagebody: {
       height: getPercent(25, height),
       width: getPercent(25, height),
-      marginVertical: getPercent(5, height),
+      marginTop: getPercent(10, height),
       overflow: "hidden",
       alignSelf: "center",
     },
     namewrapper: {
-      flex: 0.7,
+      flex: 0.6,
       justifyContent: "space-evenly",
       alignItems: "center",
       paddingHorizontal: getPercent(5, width),
@@ -29,6 +29,12 @@ export const styles = ({ width, height }) =>
       textAlign: "center",
     },
     nametext: {
+      fontFamily: "Regular",
+      fontSize: rf(20),
+      color: "#4B4B4B",
+      textAlign: "center",
+    },
+    name: {
       fontFamily: "Regular",
       fontSize: rf(24),
       color: "#4B4B4B",

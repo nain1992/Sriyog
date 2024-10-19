@@ -40,6 +40,21 @@ export const styles = ({ width, height }) =>
       alignItems: "center",
     },
     nametext: {
+      fontFamily: "Bold",
+      fontSize: rf(18),
+      color: "#4B4B4B",
+    },
+    numtext: {
+      fontFamily: "SemiBold",
+      fontSize: rf(16),
+      color: "#4B4B4B",
+    },
+    protext: {
+      fontFamily: "SemiBold",
+      fontSize: rf(16),
+      color: "#4B4B4B",
+    },
+    locatext: {
       fontFamily: "SemiBold",
       fontSize: rf(18),
       color: "#4B4B4B",

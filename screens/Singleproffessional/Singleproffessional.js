@@ -26,7 +26,7 @@ const Singleproffessional = (props) => {
       <KeyboardAwareScrollView showsVerticalScrollIndicator={false}>
         <View style={{ marginBottom: getPercent(10, height) }}>
           <Header
-            title={"| Biratnagar > Septic"}
+            title={"| Biratnagar > Septic ..."}
             navigation={props?.navigation}
           />
           <View style={styles.paymentmethodlogowrapper}>
@@ -47,16 +47,16 @@ const Singleproffessional = (props) => {
           </View>
           <View style={styles.userimagebody}>
             <Image
-              source={require("../../assets/5.png")}
+              source={require("../../assets/100.png")}
               style={{ height: "100%", width: "100%" }}
               resizeMode="contain"
             />
           </View>
           <View style={styles.userinfowrapper}>
             <Text style={styles.nametext}>Shivram Kamat</Text>
-            <Text style={styles.nametext}>987654321</Text>
-            <Text style={styles.nametext}>Septic Tank Cleaner</Text>
-            <Text style={styles.nametext}>Biratnagar</Text>
+            <Text style={styles.numtext}>987654321</Text>
+            <Text style={styles.protext}>Septic Tank Cleaner</Text>
+            <Text style={styles.locatext}>Biratnagar</Text>
           </View>
           <View style={styles.paymentmethodlogowrapper}>
             <TouchableOpacity style={styles.backiconbody}>

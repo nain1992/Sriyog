@@ -69,15 +69,12 @@ export const styles = ({ width, height }) =>
       flexWrap: "wrap",
       flexDirection: "row",
       justifyContent: "center",
-      marginTop: 5,
+      marginVertical: 10,
     },
     itembodywrapper: {
       alignItems: "center",
-      justifyContent: "center",
-      marginHorizontal: 8,
-      marginVertical: 10,
-      height: getPercent(9, height),
-      width: getPercent(9, height),
+      marginVertical: 8,
+      marginHorizontal: 5,
     },
     imagebody: {
       height: getPercent(6, height),
@@ -88,6 +85,6 @@ export const styles = ({ width, height }) =>
       fontFamily: "Regular",
       fontSize: rf(11),
       color: "#4B4B4B",
-      marginTop: 10,
+      marginTop: 2,
     },
   });
