@@ -23,6 +23,6 @@ export const styles = ({ width, height }) =>
       fontFamily: "Regular",
       fontSize: rf(11),
       color: "#4B4B4B",
-      marginTop: 8,
+      lineHeight: 15,
     },
   });

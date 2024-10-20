@@ -10,7 +10,8 @@ export const styles = ({ width, height }) =>
       backgroundColor: "#fff",
     },
     mapview: {
-      height: getPercent(22, height),
+      height: getPercent(30, height),
+      // height: 225,
       width: "90%",
       marginVertical: 10,
       alignSelf: "center",
@@ -23,7 +24,7 @@ export const styles = ({ width, height }) =>
       fontSize: rf(16),
       color: "#000000",
       paddingLeft: getPercent(5, width),
-      marginVertical: 10,
+      marginVertical: 6,
     },
     contactinforwrapper: {
       flexDirection: "row",
@@ -40,25 +41,27 @@ export const styles = ({ width, height }) =>
     textbody: {
       borderLeftWidth: 1,
       borderColor: "#4B4B4B",
-      height: getPercent(8, height),
+      height: getPercent(7, height),
       marginVertical: 5,
-      width: getPercent(80, width),
-      paddingLeft: 10,
-      marginLeft: 10,
+      width: getPercent(75, width),
+      paddingLeft: 7,
+      marginLeft: 15,
       justifyContent: "center",
     },
     addressinfortext: {
       fontFamily: "Regular",
       fontSize: rf(13),
       color: "#4B4B4B",
+      lineHeight: 25,
     },
     dropzonewrapper: {
       flexDirection: "row",
       alignItems: "center",
       paddingHorizontal: getPercent(5, width),
       justifyContent: "space-between",
-      height: getPercent(10, height),
+      height: getPercent(8, height),
     },
+
     dropzonebtn: {
       height: getPercent(4.5, height),
       width: getPercent(40, width),

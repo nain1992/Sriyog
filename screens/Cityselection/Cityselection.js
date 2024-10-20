@@ -63,7 +63,7 @@ const Cityselection = (props) => {
               resizeMode="contain"
             />
           </View>
-          <Text style={styles.searchtext}>Search Connect Work</Text>
+          <Text style={styles.searchtext}>Search > Connect > Work</Text>
         </View>
       </View>
       {isPickerVisible && (

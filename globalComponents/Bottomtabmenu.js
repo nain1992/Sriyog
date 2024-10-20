@@ -38,8 +38,8 @@ const Bottomtabmenu = (props) => {
     {
       image: require("../assets/21.png"),
       title: "Post a Task",
-      height: getPercent(4, height),
-      width: getPercent(4, height),
+      height: getPercent(5, height),
+      width: getPercent(5, height),
       backgroundColor: "#D9D9D9",
       iconheight: "70%",
       iconwidth: "70%",

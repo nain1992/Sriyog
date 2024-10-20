@@ -10,14 +10,15 @@ export const styles = ({ width, height }) =>
       backgroundColor: "#fff",
     },
     logowrapper: {
-      height: getPercent(25, height),
-      width: getPercent(25, height),
+      height: getPercent(27, height),
+      width: getPercent(27, height),
+
       alignSelf: "center",
-      marginVertical: getPercent(5, height),
+      marginVertical: getPercent(10, height),
     },
     languagepickerbody: {
-      height: getPercent(6, height),
-      width: getPercent(60, width),
+      height: getPercent(5.5, height),
+      width: getPercent(57, width),
       borderRadius: 5,
       borderWidth: 1,
       borderColor: "#4B4B4B",
@@ -48,9 +49,9 @@ export const styles = ({ width, height }) =>
       justifyContent: "flex-end",
     },
     innerwrapper: {
-      flex: 0.6,
-      justifyContent: "space-between",
-      paddingBottom: getPercent(5, height),
+      flex: 0.8,
+      justifyContent: "space-around",
+      paddingTop: getPercent(3, height),
     },
     Sponserwrapper: {
       height: getPercent(10, height),

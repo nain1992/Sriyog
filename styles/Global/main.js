@@ -6,7 +6,7 @@ import { getPercent } from "../../middleware";
 export const Bottomtabmenustyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
-      height: getPercent(10, height),
+      height: getPercent(12, height),
       width: getPercent(100, width),
       backgroundColor: "#EEEEEE",
       flexDirection: "row",
@@ -30,15 +30,16 @@ export const Bottomtabmenustyles = ({ width, height }) =>
       fontFamily: "Regular",
       fontSize: rf(11),
       color: "#4B4B4B",
-      marginTop: 5,
+      lineHeight: 25,
     },
   });
 
 export const standardButtonStyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
-      height: getPercent(7, height),
-      width: getPercent(45, width),
+      height: getPercent(6, height),
+      width: getPercent(35, width),
+
       backgroundColor: "#0C4690",
       alignSelf: "center",
       borderRadius: 10,
@@ -54,8 +55,8 @@ export const standardButtonStyles = ({ width, height }) =>
     },
 
     text: {
-      fontSize: rf(18),
-      fontFamily: "SemiBold",
+      fontSize: rf(22),
+      fontFamily: "Regular",
       color: "#fff",
     },
   });
@@ -65,8 +66,9 @@ export const standardButtonStyles = ({ width, height }) =>
 export const Nextbtnstyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
-      height: getPercent(7, height),
-      width: getPercent(40, width),
+      height: getPercent(6, height),
+      width: getPercent(35, width),
+
       flexDirection: "row",
       backgroundColor: "#0C4690",
       alignSelf: "center",
@@ -83,8 +85,8 @@ export const Nextbtnstyles = ({ width, height }) =>
     },
 
     text: {
-      fontSize: rf(18),
-      fontFamily: "SemiBold",
+      fontSize: rf(22),
+      fontFamily: "Regular",
       color: "#fff",
     },
     iconbody: {
@@ -115,7 +117,7 @@ export const Headerstyles = ({ width, height }) =>
   StyleSheet.create({
     container: {
       width: getPercent(100, width),
-      height: getPercent(12, height),
+      height: getPercent(10, height),
       alignItems: "center",
       justifyContent: "center",
       backgroundColor: "#fff",

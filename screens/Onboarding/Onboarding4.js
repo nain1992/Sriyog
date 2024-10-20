@@ -43,7 +43,7 @@ const Onboarding4 = (props) => {
       </View>
 
       <View style={styles.btnwrapper}>
-        <StandardButton title={"Next"} onPress={HandlenextPress} />
+        <StandardButton title={"Home"} onPress={HandlenextPress} />
         <Text
           onPress={handleSkip}
           style={[
